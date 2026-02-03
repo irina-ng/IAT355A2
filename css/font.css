@@ -25,11 +25,13 @@
 h1{
     font-family: "DMSans", sans-serif;
     font-weight: bold;
+     padding-bottom:0;
 }
 
 h2{
     font-family: "DMSans", sans-serif;
     font-weight: 600;
+    padding-bottom:0;
 }
 
 
@@ -37,4 +39,5 @@ h2{
 body {
     font-family: "DMSans", sans-serif;
     font-weight: 500;
+    margin:2rem;
 }
