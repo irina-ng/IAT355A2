@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'DMSans';
     font-weight: 500;
-    font-style: Normal;
+    font-style: normal;
     src: url('../fonts/DMSans-Regular.ttf'), format('ttf');
 }
 
@@ -10,7 +10,7 @@
 @font-face {
     font-family: 'DMSans';
     font-weight: 700;
-    font-style: Normal;
+    font-style: normal;
     src: url('../fonts/DMSans-Bold.ttf'), format('ttf');
 }
 
@@ -18,10 +18,23 @@
 @font-face {
     font-family: 'DMSans';
     font-weight: 600;
-    font-style: Normal;
+    font-style: normal;
     src: url('../fonts/DMSans-SemiBold.ttf'), format('ttf');
 }
 
 h1{
-    font-family:"DMSans, sans-serif";
+    font-family: "DMSans", sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: "DMSans", sans-serif;
+    font-weight: 600;
+}
+
+
+
+body {
+    font-family: "DMSans", sans-serif;
+    font-weight: 500;
 }
