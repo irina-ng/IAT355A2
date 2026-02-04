@@ -43,12 +43,28 @@ nav a:focus {
   color: rgb(221, 179, 255);
 }
 
+.two-column {
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.education{
+  padding-left:2rem;
+}
+
+@media(min-width: 50rem) { 
+
 .project-experience.two-column {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+}
 
+
+@media(min-width: 50rem) { 
 .education.two-column {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
@@ -56,6 +72,9 @@ nav a:focus {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
+}
+
+
 
 li,
 ul {
@@ -129,12 +148,13 @@ p {
 
 /* visualization page */
 
+@media(min-width: 50rem) { 
+
 #SVG-html h2,#SVG-html h1,
 #SVG-java h2 {
   margin-left: 5rem;
   margin-top: 5rem;
 }
-
 
 #SVG-java a {
    margin-left: 5rem;
@@ -144,3 +164,17 @@ p {
     margin-left: 5rem;
   margin-top: 5rem;
 }
+}
+
+svg{
+  max-width: 100%;
+  height:auto;
+}
+
+#SVG-html svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
