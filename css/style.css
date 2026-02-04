@@ -1,3 +1,8 @@
+body{
+    margin-left:1rem;
+    margin-right:1rem;
+}
+
 img{
      display: block;
     max-width:100%;
@@ -5,13 +10,118 @@ img{
     border-radius: 1.5rem;
 }
 
-ul{
-    text-decoration: none;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #0077b6;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin:0rem;
+    border-radius: 1rem;
 }
+
+nav a{
+    text-decoration: none;
+    padding-right: 1rem;
+    color:rgb(232, 232, 232);
+    margin:0;
+}
+
+nav a:hover{
+    color:rgb(221, 179, 255);
+ 
+}
+
 
 .project-experience.two-column{
        display: grid;
      grid-template-columns: 1fr 1fr;
      gap:1rem;
 }
+
+.education.two-column{
+      display: grid;
+     grid-template-columns: 1fr 3fr 3fr 1fr;
+     gap:2rem;
+     padding-bottom: 2rem;
+     padding-top: 2rem;
+}
+
+li,ul{
+    margin:0;
+     text-decoration: none;
+     padding: 0;
+     list-style-type: none;
+     
+}
+
+p{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+h2{
+    padding-top:1rem;
+    margin:0;
+}
+
+h3{
+    padding-top:2rem;
+    margin:0;
+}
+
+
+#education{
+    border-radius: 1rem;
+    background-color: #ADD8E6;
+    margin:5rem;
+}
+
+#Bio{
+     margin:5rem;
+}
+
+#Bio h1,h2,h3{
+    padding-top:0;
+}
+
+#Bio h3{
+    padding-bottom:2rem;
+}
+
+
+#Bio h1{
+    margin-bottom:0;
+}
+
+#project{
+     margin:5rem;
+}
+#project h2,h3,h4,p{
+    padding:0;
+    margin:0;
+}
+
+#project h2{
+    padding-top:2rem;
+    
+}
+
+#project h3{
+    padding-top:3rem;
+}
+
+#project p{
+    padding-top:0.5rem;
+    padding-bottom:1rem;
+}
+
+
+
+
+
+
+
 

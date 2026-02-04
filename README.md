@@ -1,6 +1,17 @@
+
+
+<!-- 
+
+To use the website, through scrolling up and down. To see the two SVG, click on visualization on the top right of the navbar. To go back to the home page of Irina's profile, click on home. 
+
+
 Citation
 
-<!-- SVG waves
+
+nav bar
+https://www.w3schools.com/css/css_navbar.asp 
+
+SVG waves
 https://www.youtube.com/watch?v=debPZs45m44 
 
 function waveCreator() 
