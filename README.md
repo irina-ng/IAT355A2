@@ -14,6 +14,9 @@ https://www.w3schools.com/css/css_navbar.asp
 SVG waves
 https://www.youtube.com/watch?v=debPZs45m44
 
+Responsive SVG
+https://12daysofweb.dev/2023/responsive-svgs/ 
+
 function waveCreator()
 { const svgWidth = window.innerWidth;
 const svgHeight = 400;
