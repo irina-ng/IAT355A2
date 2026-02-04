@@ -1,0 +1,67 @@
+Citation
+
+<!-- SVG waves
+https://www.youtube.com/watch?v=debPZs45m44 
+
+function waveCreator() 
+{ const svgWidth = window.innerWidth; 
+const svgHeight = 400; 
+
+const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg"); const path = document.createElementNS("http://www.w3.org/2000/svg", "path"); 
+
+svg.setAttribute("width", svgWidth); 
+svg.setAttribute("height", svgHeight); 
+const frequency = 0.008; 
+const amplitude = 50; 
+const phase = 4; 
+let pathData = M 0 ${svgHeight / 2}; 
+for (let x = 0; x < svgWidth; x++) { 
+const y = amplitude * Math.sin(frequency * x + phase) + svgHeight / 2; 
+pathData += L ${x} ${y}; } 
+path.setAttribute("d", pathData); 
+path.setAttribute("fill", "blue"); 
+path.setAttribute("stroke", "black"); 
+path.setAttribute("stroke-width", 2); 
+
+svg.appendChild(path); 
+const waveContainer = document.getElementById("wave-container"); 
+waveContainer.appendChild(svg); } 
+waveCreator();
+
+
+ChatGPT 
+Prompt: have the frequency of the wave change when scrolling
+
+let wavePath;       // reference to the wave path
+let svgWidth;
+let svgHeight = 400;
+
+const amplitude = 50;
+const phase = 4;
+
+function drawWave(frequency) {
+  let pathData = `M 0 ${svgHeight / 2}`;
+
+  for (let x = 0; x < svgWidth; x++) {
+    const y = amplitude * Math.sin(frequency * x + phase) + svgHeight / 2;
+    pathData += ` L ${x} ${y}`;
+  }
+
+  wavePath.setAttribute("d", pathData);
+}
+
+// SCROLL EVENT → changes frequency
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const scrollProgress = scrollTop / maxScroll;
+
+  const minFreq = 0.002;
+  const maxFreq = 0.02;
+
+  const dynamicFrequency = minFreq + scrollProgress * (maxFreq - minFreq);
+
+  drawWave(dynamicFrequency);
+});
+
+-->
